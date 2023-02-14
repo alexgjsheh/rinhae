@@ -1,0 +1,153 @@
+.main-navigation {
+    display: block;
+    margin-left: auto;
+    text-align: center;
+
+    ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+
+        ul {
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            float: left;
+            position: absolute;
+            top: 100%;
+            left: -999em;
+            z-index: 99999;
+
+            ul {
+                left: -999em;
+                top: 0;
+            }
+
+            li {
+                &:hover > ul,
+                &.focus > ul {
+                    display: block;
+                    left: auto;
+                }
+            }
+
+            a {
+                width: 200px;
+            }
+
+            :hover > a,
+            .focus > a {
+            }
+
+            a:hover,
+            a.focus {
+            }
+        }
+
+        li:hover > ul,
+        li.focus > ul {
+            left: auto;
+        }
+    }
+
+    li {
+        position: relative;
+
+        &:hover > a,
+        &.focus > a {
+            background-color: #305c9f;
+            color: white;
+        }
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        color: white;
+        background-color: black;
+    }
+
+    .current_page_item > a,
+    .current-menu-item > a,
+    .current_page_ancestor > a,
+    .current-menu-ancestor > a {
+        background-color: #305c9f;
+    }
+}
+
+.menu-item-has-children ul li {
+    display: none;
+}
+
+.sub-menu {
+    background-color: black;
+    flex-direction: column;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+    display: block;
+    height: 56px;
+    border: 0;
+    background-color: black;
+}
+
+.hamburger-menu {
+    fill: white;
+}
+
+.site-navigation {
+    width: 100%;
+}
+
+.menu-header-menu-container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: black;
+}
+
+@media screen and (min-width: 37.5em) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-navigation ul {
+        display: flex;
+    }
+    .menu-item-has-children ul li {
+        display: block;
+    }
+    .main-navigation {
+        width: auto;
+        display: flex;
+    }
+    .menu-header-menu-container {
+        position: relative;
+    }
+    .sub-menu a {
+        text-align: left;
+    }
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+    .site-main & {
+        margin: 0 0 1.5em;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-previous {
+        flex: 1 0 50%;
+    }
+
+    .nav-next {
+        text-align: end;
+        flex: 1 0 50%;
+    }
+}

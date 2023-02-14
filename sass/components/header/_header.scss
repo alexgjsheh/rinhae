@@ -1,0 +1,30 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 56px;
+    grid-area: header;
+}
+
+.site-branding {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.site-title {
+    color: white;
+    margin: 0 0 0 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.site-title a:hover {
+    color: white;
+}
