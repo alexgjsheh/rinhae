@@ -624,6 +624,10 @@ textarea {
 	padding: 0 1rem;
 }
 
+.widget-area {
+	grid-area: sidebar;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -760,6 +764,13 @@ textarea {
 	flex: 1 0 50%;
 }
 
+.cat-links,
+.comments-link,
+.edit-link {
+	display: block;
+	font-weight: bold;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -815,6 +826,22 @@ th {
 	font-size: 0.8rem;
 }
 
+.single-rinhae-students .entry-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.single-rinhae-students .entry-title {
+	text-align: center;
+}
+
+.widget-area {
+	grid-area: sidebar;
+	margin-top: 1.5rem;
+}
+
 @media (min-width: 26.25rem) {
 	.page-id-56 table {
 		font-size: 0.9rem;
@@ -825,6 +852,14 @@ th {
 	}
 	.page-id-56 .post-56 {
 		font-size: 0.9rem;
+	}
+	.tax-rinhae-student-type article img {
+		float: left;
+		display: inline;
+		margin-right: 1.5rem;
+	}
+	.tax-rinhae-student-type article {
+		display: left;
 	}
 }
 @media (min-width: 37.5rem) {
@@ -854,6 +889,20 @@ th {
 	}
 	.page-id-56 .post-56 {
 		font-size: 1rem;
+	}
+	.page-id-54 h2 {
+		width: 100%;
+	}
+	.page-id-54 .staff-content-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.page-id-54 .staff-member {
+		width: 48%;
+	}
+	.single-rinhae-students .post-thumbnail {
+		max-width: 35rem;
 	}
 }
 @media (min-width: 50rem) {

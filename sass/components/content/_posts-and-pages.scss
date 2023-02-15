@@ -53,6 +53,25 @@ th {
     font-size: 0.8rem;
 }
 
+// Individual student page styling
+
+.single-rinhae-students .entry-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-rinhae-students .entry-title {
+    text-align: center;
+}
+
+// News page styling
+.widget-area {
+    grid-area: sidebar;
+    margin-top: 1.5rem;
+}
+
 @media (min-width: 26.25rem) {
     // schedule page styling
     .page-id-56 table {
@@ -64,6 +83,15 @@ th {
     }
     .page-id-56 .post-56 {
         font-size: 0.9rem;
+    }
+    // Student-type Page Styling
+    .tax-rinhae-student-type article img {
+        float: left;
+        display: inline;
+        margin-right: 1.5rem;
+    }
+    .tax-rinhae-student-type article {
+        display: left;
     }
 }
 // Page specific styling can put here
@@ -95,6 +123,22 @@ th {
     }
     .page-id-56 .post-56 {
         font-size: 1rem;
+    }
+    // staff page styling
+    .page-id-54 h2 {
+        width: 100%;
+    }
+    .page-id-54 .staff-content-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .page-id-54 .staff-member {
+        width: 48%;
+    }
+    // Student-type Page Styling
+    .single-rinhae-students .post-thumbnail {
+        max-width: 35rem;
     }
 }
 

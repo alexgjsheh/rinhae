@@ -32,6 +32,7 @@ get_header();
 					<!-- outputting block editor content -->
 					<?php the_content(); ?>
 				<!-- output Staff category -->
+				<article class="staff-content-container">
 				<?php
 				$terms = get_terms( 
 					array(
@@ -63,8 +64,9 @@ get_header();
 						if ( $query -> have_posts() ){
 							while ( $query -> have_posts() ) {
 								$query -> the_post();
-						
+								
 								if ( function_exists( 'get_field' ) ) {
+									echo '<div class="staff-member">';
 									if ( get_field( 'staff_biography' ) ) {
 										echo '<h3 id="'. esc_attr( get_the_ID() ) . '">' . esc_html( get_the_title() ) .'</h3>';
 										echo '<p>' . the_field( 'courses') . '</p>';
@@ -73,6 +75,7 @@ get_header();
 									if (get_field( 'instructor_website' )) {
 										echo '<a href="'. esc_html( get_field( 'instructor_website') ) .'">' .' Instructor Website</a>';
 									}
+									echo '</div>';
 									}
 								}
 							}
@@ -82,6 +85,7 @@ get_header();
 						<?php
 					}
 				?>
+				</article>
 				</div>
 
 		<?php
