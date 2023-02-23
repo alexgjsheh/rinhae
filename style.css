@@ -624,10 +624,6 @@ textarea {
 	padding: 0 1rem;
 }
 
-.widget-area {
-	grid-area: sidebar;
-}
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -797,7 +793,7 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
-.post-type-archive-rinhae-students a {
+.post-type-archive-rinhae-students main a {
 	font-weight: bold;
 }
 
